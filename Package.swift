@@ -63,7 +63,7 @@ let package = Package(
     ),
     .target(
       name: "Core",
-      dependencies: ["GoogleMapsCore"],
+      dependencies: ["GoogleMaps", "GoogleMapsCore"],
       path: "Core",
       sources: ["GMSEmpty.m"],
       publicHeadersPath: "Sources"
@@ -74,7 +74,7 @@ let package = Package(
     ),
     .target(
       name: "Base",
-      dependencies: ["GoogleMapsBase"],
+      dependencies: ["GoogleMaps", "GoogleMapsBase"],
       path: "Base",
       sources: ["GMSEmpty.m"],
       publicHeadersPath: "Sources"
